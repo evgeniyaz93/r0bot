@@ -1,4 +1,4 @@
-package ru.r0bot;
+package ru.r0bot.telegram;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -9,12 +9,12 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 import ru.r0bot.telegram.TelegramR0bot;
 
 @org.springframework.context.annotation.Configuration
-public class Configuration {
+public class TelegramConfiguration {
 
     TelegramR0bot telegramR0bot;
 
     @Autowired
-    Configuration(TelegramR0bot telegramR0bot){
+    TelegramConfiguration(TelegramR0bot telegramR0bot){
         this.telegramR0bot = telegramR0bot;
     }
 
