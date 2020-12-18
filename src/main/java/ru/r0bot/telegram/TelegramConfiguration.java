@@ -6,9 +6,9 @@ import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.meta.generics.BotSession;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
-import ru.r0bot.telegram.TelegramR0bot;
 
 @org.springframework.context.annotation.Configuration
+
 public class TelegramConfiguration {
 
     TelegramR0bot telegramR0bot;
@@ -29,4 +29,5 @@ public class TelegramConfiguration {
         }
         return session;
     }
+
 }
